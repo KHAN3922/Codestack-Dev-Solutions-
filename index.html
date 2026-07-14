@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CodeStack Dev Solutions — Building Intelligent Software, Empowering Innovation  </title>
-<meta name="google-site-verification" content="fec700631a94efd0" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
 <style>
@@ -532,6 +531,159 @@ nav.scrolled {
   line-height: 1.75; font-weight: 300;
 }
 
+/* ═══════════════ TRUST BAR ═══════════════ */
+#trust {
+  position: relative; z-index: 3;
+  padding: 60px 6% 70px;
+  max-width: 1080px; margin: 0 auto;
+}
+.trust-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 1px; background: var(--border);
+  border: 1px solid var(--border); border-radius: 12px; overflow: hidden;
+}
+.trust-item {
+  background: rgba(12,20,36,0.75);
+  padding: 1.8rem 1rem; text-align: center;
+}
+.trust-num {
+  font-family: var(--font-h); font-size: 1.6rem; font-weight: 600;
+  color: var(--blue3); margin-bottom: .3rem;
+}
+.trust-lbl {
+  font-family: var(--font-mono); font-size: .58rem;
+  color: var(--silver-dim); letter-spacing: .12em; text-transform: uppercase;
+}
+.trust-note {
+  text-align: center; margin-top: 1.2rem;
+  font-family: var(--font-mono); font-size: .56rem;
+  color: var(--silver-dim); opacity: .6; letter-spacing: .06em;
+}
+
+/* ═══════════════ SERVICE CARD (business-outcome format) ═══════════════ */
+.svc-flow {
+  display: flex; flex-direction: column; gap: .5rem;
+  margin-bottom: 1rem;
+}
+.svc-flow-row {
+  font-size: .74rem; line-height: 1.6; color: var(--silver-dim); font-weight: 300;
+}
+.svc-flow-row b {
+  color: var(--blue3); font-family: var(--font-mono); font-size: .58rem;
+  letter-spacing: .1em; text-transform: uppercase; display: block; margin-bottom: .15rem;
+}
+.svc-cta {
+  font-family: var(--font-mono); font-size: .62rem;
+  color: var(--white); text-decoration: none;
+  letter-spacing: .1em; text-transform: uppercase;
+  border-bottom: 1px solid rgba(80,160,255,0.4);
+  padding-bottom: 2px; transition: all .25s;
+}
+.svc-cta:hover { color: var(--blue3); border-color: var(--blue3); }
+
+/* ═══════════════ WHY CHOOSE ═══════════════ */
+#why {
+  position: relative; z-index: 3;
+  padding: 110px 6%;
+}
+.why-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1.1rem; max-width: 1080px; margin: 0 auto;
+}
+.why-card {
+  background: rgba(12,20,36,0.75);
+  border: 1px solid var(--border2);
+  border-radius: 10px; padding: 1.8rem 1.5rem;
+  transition: all .3s;
+}
+.why-card:hover { border-color: rgba(80,160,255,0.35); transform: translateY(-3px); }
+.why-icon { font-size: 1.3rem; margin-bottom: .9rem; }
+.why-title {
+  font-family: var(--font-h); font-size: 1.05rem; font-weight: 600;
+  color: var(--white); letter-spacing: .03em; margin-bottom: .5rem; text-transform: uppercase;
+}
+.why-desc { font-size: .78rem; color: var(--silver-dim); line-height: 1.7; font-weight: 300; }
+
+/* ═══════════════ PROCESS ═══════════════ */
+#process {
+  position: relative; z-index: 3;
+  padding: 110px 6%;
+}
+.process-list {
+  max-width: 780px; margin: 0 auto;
+  display: flex; flex-direction: column;
+}
+.proc-step {
+  display: flex; gap: 1.4rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.proc-step:last-child { border-bottom: none; }
+.proc-num {
+  font-family: var(--font-logo); font-size: 1.3rem; font-weight: 700;
+  color: var(--blue3); opacity: .55; flex-shrink: 0; width: 48px;
+}
+.proc-title {
+  font-family: var(--font-h); font-size: 1.05rem; font-weight: 600;
+  color: var(--white); text-transform: uppercase; letter-spacing: .03em; margin-bottom: .35rem;
+}
+.proc-desc { font-size: .8rem; color: var(--silver-dim); line-height: 1.7; font-weight: 300; }
+
+/* ═══════════════ CASE STUDIES ═══════════════ */
+#work {
+  position: relative; z-index: 3;
+  padding: 110px 6%;
+}
+.work-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem; max-width: 1080px; margin: 0 auto;
+}
+.work-card {
+  background: rgba(12,20,36,0.8);
+  border: 1px solid var(--border2);
+  border-radius: 12px; padding: 2rem;
+  transition: all .3s;
+}
+.work-card:hover { border-color: rgba(80,160,255,0.3); transform: translateY(-3px); }
+.work-tag {
+  display: inline-block; font-family: var(--font-mono); font-size: .55rem;
+  color: var(--blue3); border: 1px solid rgba(80,160,255,0.3); border-radius: 20px;
+  padding: .25rem .7rem; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 1rem;
+}
+.work-row { margin-bottom: .8rem; }
+.work-row b {
+  display: block; font-family: var(--font-mono); font-size: .56rem;
+  color: var(--silver-dim); letter-spacing: .1em; text-transform: uppercase; margin-bottom: .2rem;
+}
+.work-row span { font-size: .8rem; color: var(--silver); line-height: 1.6; font-weight: 300; }
+.work-placeholder { color: var(--silver-dim); font-style: italic; opacity: .7; }
+
+/* ═══════════════ FINAL CTA ═══════════════ */
+#final-cta {
+  position: relative; z-index: 3;
+  padding: 100px 6% 70px; text-align: center;
+}
+.fc-title {
+  font-family: var(--font-h);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 600; letter-spacing: .05em; text-transform: uppercase;
+  color: var(--white); margin-bottom: 1.1rem;
+}
+.fc-desc {
+  font-size: .92rem; color: var(--silver-dim); line-height: 1.85;
+  max-width: 540px; margin: 0 auto 2.2rem; font-weight: 300;
+}
+.fc-steps {
+  display: flex; justify-content: center; gap: 2.2rem; flex-wrap: wrap;
+  max-width: 700px; margin: 0 auto 2.6rem;
+}
+.fc-step { font-size: .74rem; color: var(--silver-dim); font-weight: 300; max-width: 160px; }
+.fc-step b { display: block; color: var(--blue3); font-family: var(--font-mono); font-size: .6rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: .3rem; }
+.fc-note {
+  font-family: var(--font-mono); font-size: .6rem; color: var(--silver-dim);
+  letter-spacing: .06em; opacity: .7; margin-top: 1.6rem;
+}
+
 /* ═══════════════ CONTACT ═══════════════ */
 #contact {
   position: relative; z-index: 3;
@@ -617,6 +769,10 @@ footer {
   .c-cards { grid-template-columns:1fr; }
   .logo-scene { flex-direction:column; gap:1.5rem; }
   .nav-links { display:none; }
+  .trust-grid { grid-template-columns:repeat(2,1fr); }
+  .why-grid { grid-template-columns:1fr; }
+  .work-grid { grid-template-columns:1fr; }
+  .fc-steps { gap:1.4rem; }
 }
 @media(max-width:600px){
   .logo-line1,.logo-line2 { font-size: 2.2rem; }
@@ -665,9 +821,12 @@ footer {
   </a>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#work">Our Work</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="#contact" class="nav-btn">Start Project →</a>
+  <a href="#contact" class="nav-btn">Book a Free Consultation</a>
 </nav>
 
 <!-- ═══ HERO ═══ -->
@@ -703,13 +862,13 @@ footer {
   </div>
 
   <p class="hero-tagline-main">
-    We Engineer <span>Digital Excellence</span>
+    Software That <span>Cuts Manual Work</span> And Grows Your Business
   </p>
-  <p class="hero-desc">Premium website development, strategic IT consulting, and business model architecture — crafted for organizations that demand results.</p>
+  <p class="hero-desc">CodeStack builds custom websites, apps, and AI-driven tools for business owners who are tired of outdated systems and repetitive manual processes. We design around how your business actually runs — so you save time, reduce costs, and give customers a better experience.</p>
 
   <div class="hero-btns">
-    <a href="#contact" class="btn-prim">Start a Project →</a>
-    <a href="#services" class="btn-sec">Our Services</a>
+    <a href="#contact" class="btn-prim">Book a Free Consultation →</a>
+    <a href="#work" class="btn-sec">View Our Work</a>
   </div>
 
   <div class="scroll-indicator">
@@ -718,34 +877,288 @@ footer {
   </div>
 </section>
 
+<!-- ═══ TRUST BAR ═══ -->
+<section id="trust">
+  <div class="trust-grid">
+    <div class="trust-item reveal">
+      <div class="trust-num">[Add years]</div>
+      <div class="trust-lbl">Years in Business</div>
+    </div>
+    <div class="trust-item reveal rd1">
+      <div class="trust-num">[Add count]</div>
+      <div class="trust-lbl">Projects Delivered</div>
+    </div>
+    <div class="trust-item reveal rd2">
+      <div class="trust-num">PK · UK</div>
+      <div class="trust-lbl">Markets Served</div>
+    </div>
+    <div class="trust-item reveal rd3">
+      <div class="trust-num">[Add industries]</div>
+      <div class="trust-lbl">Industries Served</div>
+    </div>
+  </div>
+  <div class="trust-note">Figures above are placeholders — replace with verified numbers before publishing.</div>
+</section>
+
 <div class="divider"></div>
 
 <!-- ═══ SERVICES ═══ -->
 <section id="services">
   <div class="s-label reveal">What We Do</div>
-  <h2 class="s-title reveal rd1">Elite Services</h2>
-  <p class="s-sub reveal rd2">Precision-engineered solutions built specifically for your requirements. No templates. No shortcuts.</p>
+  <h2 class="s-title reveal rd1">Solutions Built Around Your Business</h2>
+  <p class="s-sub reveal rd2">Every service exists to solve a specific business problem — not to sell technology for its own sake.</p>
 
   <div class="svc-grid">
     <div class="svc reveal">
-      <div class="svc-num">01 / Development</div>
-      <div class="svc-icon">🌐</div>
-      <div class="svc-title">Premium Websites</div>
-      <div class="svc-desc">Bespoke, lightning-fast web applications built from first principles. Custom full-stack architecture, ironclad security, and flawless performance tailored to enterprise demands.</div>
+      <div class="svc-icon">💻</div>
+      <div class="svc-title">Custom Software Development</div>
+      <div class="svc-flow">
+        <div class="svc-flow-row"><b>Problem</b>Off-the-shelf tools don't fit how your business actually works, forcing you to work around their limits.</div>
+        <div class="svc-flow-row"><b>Solution</b>Software built specifically for your workflows, data, and team.</div>
+        <div class="svc-flow-row"><b>Benefit</b>Less manual workaround, fewer errors, more control over your own process.</div>
+      </div>
+      <a href="#contact" class="svc-cta">Book a Free Consultation →</a>
     </div>
+
     <div class="svc reveal rd1">
-      <div class="svc-num">02 / Consulting</div>
-      <div class="svc-icon">🧠</div>
-      <div class="svc-title">IT Consulting</div>
-      <div class="svc-desc">Strategic tech architecture, infrastructure planning, and digital transformation. Legacy modernization, cloud architecture, and security audits aligned to your long-term goals.</div>
+      <div class="svc-icon">🌐</div>
+      <div class="svc-title">Web Application Development</div>
+      <div class="svc-flow">
+        <div class="svc-flow-row"><b>Problem</b>A slow, outdated, or purely informational website isn't doing any real work for your business.</div>
+        <div class="svc-flow-row"><b>Solution</b>A fast, secure web application that lets customers book, buy, or self-serve online.</div>
+        <div class="svc-flow-row"><b>Benefit</b>More conversions, fewer support calls, a system that works while you sleep.</div>
+      </div>
+      <a href="#contact" class="svc-cta">Book a Free Consultation →</a>
     </div>
+
     <div class="svc reveal rd2">
-      <div class="svc-num">03 / Strategy</div>
-      <div class="svc-icon">📐</div>
-      <div class="svc-title">Business Modeling</div>
-      <div class="svc-desc">We analyze, structure, and optimize your digital workflows and revenue models — eliminating inefficiencies and maximizing ROI through intelligent software integration.</div>
+      <div class="svc-icon">📱</div>
+      <div class="svc-title">Mobile Application Development</div>
+      <div class="svc-flow">
+        <div class="svc-flow-row"><b>Problem</b>Customers expect to reach your business from their phone — and a missing app is a missed touchpoint.</div>
+        <div class="svc-flow-row"><b>Solution</b>A native or cross-platform app built around what your customers actually need to do.</div>
+        <div class="svc-flow-row"><b>Benefit</b>Higher repeat engagement and a direct channel to your customers.</div>
+      </div>
+      <a href="#contact" class="svc-cta">Book a Free Consultation →</a>
+    </div>
+
+    <div class="svc reveal">
+      <div class="svc-icon">🤖</div>
+      <div class="svc-title">AI Development</div>
+      <div class="svc-flow">
+        <div class="svc-flow-row"><b>Problem</b>Repetitive tasks — support replies, data entry, lead follow-up — eat hours your team could spend elsewhere.</div>
+        <div class="svc-flow-row"><b>Solution</b>AI-powered tools and agents that automate the repeatable parts of your operations.</div>
+        <div class="svc-flow-row"><b>Benefit</b>Lower labor cost per task and faster response times for customers.</div>
+      </div>
+      <a href="#contact" class="svc-cta">Book a Free Consultation →</a>
+    </div>
+
+    <div class="svc reveal rd1">
+      <div class="svc-icon">🎨</div>
+      <div class="svc-title">UI/UX Design</div>
+      <div class="svc-flow">
+        <div class="svc-flow-row"><b>Problem</b>A confusing interface loses customers before they ever reach checkout or signup.</div>
+        <div class="svc-flow-row"><b>Solution</b>Interfaces designed around how real users think and behave.</div>
+        <div class="svc-flow-row"><b>Benefit</b>Higher completion rates and a product people trust on sight.</div>
+      </div>
+      <a href="#contact" class="svc-cta">Book a Free Consultation →</a>
+    </div>
+
+    <div class="svc reveal rd2">
+      <div class="svc-icon">🔌</div>
+      <div class="svc-title">API Development</div>
+      <div class="svc-flow">
+        <div class="svc-flow-row"><b>Problem</b>Your tools don't talk to each other, so someone ends up copying data by hand.</div>
+        <div class="svc-flow-row"><b>Solution</b>APIs that connect your systems so data moves automatically.</div>
+        <div class="svc-flow-row"><b>Benefit</b>Fewer manual handoffs and fewer costly data-entry mistakes.</div>
+      </div>
+      <a href="#contact" class="svc-cta">Book a Free Consultation →</a>
+    </div>
+
+    <div class="svc reveal">
+      <div class="svc-icon">☁️</div>
+      <div class="svc-title">Cloud Solutions</div>
+      <div class="svc-flow">
+        <div class="svc-flow-row"><b>Problem</b>Growth gets bottlenecked by servers and infrastructure that can't keep up with demand.</div>
+        <div class="svc-flow-row"><b>Solution</b>Cloud infrastructure that scales with your traffic and usage.</div>
+        <div class="svc-flow-row"><b>Benefit</b>Reliable uptime during growth spikes without overpaying for idle capacity.</div>
+      </div>
+      <a href="#contact" class="svc-cta">Book a Free Consultation →</a>
+    </div>
+
+    <div class="svc reveal rd1">
+      <div class="svc-icon">🛠️</div>
+      <div class="svc-title">Software Maintenance</div>
+      <div class="svc-flow">
+        <div class="svc-flow-row"><b>Problem</b>Software left unmaintained becomes slower, less secure, and harder to update over time.</div>
+        <div class="svc-flow-row"><b>Solution</b>Ongoing monitoring, updates, and support after launch.</div>
+        <div class="svc-flow-row"><b>Benefit</b>Fewer outages and a system that keeps pace with your business.</div>
+      </div>
+      <a href="#contact" class="svc-cta">Book a Free Consultation →</a>
+    </div>
+
+    <div class="svc reveal rd2">
+      <div class="svc-icon">📈</div>
+      <div class="svc-title">Business Consulting</div>
+      <div class="svc-flow">
+        <div class="svc-flow-row"><b>Problem</b>It's not always clear which parts of your operation are worth automating first.</div>
+        <div class="svc-flow-row"><b>Solution</b>A review of your workflows to identify where software delivers the fastest payoff.</div>
+        <div class="svc-flow-row"><b>Benefit</b>A clear, prioritized plan instead of guesswork.</div>
+      </div>
+      <a href="#contact" class="svc-cta">Book a Free Consultation →</a>
     </div>
   </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══ WHY CHOOSE CODESTACK ═══ -->
+<section id="why">
+  <div class="s-label reveal">Why CodeStack</div>
+  <h2 class="s-title reveal rd1">Why Business Owners Choose Us</h2>
+  <p class="s-sub reveal rd2">We build software the way we'd want it built for our own business — with your outcomes as the measure of success.</p>
+
+  <div class="why-grid">
+    <div class="why-card reveal">
+      <div class="why-icon">🧩</div>
+      <div class="why-title">Built Around Your Business</div>
+      <div class="why-desc">No generic templates. Every solution starts with your workflow, not a pre-built package.</div>
+    </div>
+    <div class="why-card reveal rd1">
+      <div class="why-icon">💬</div>
+      <div class="why-title">Transparent Communication</div>
+      <div class="why-desc">You know what's being built, why, and when — no jargon-filled updates or silent stretches.</div>
+    </div>
+    <div class="why-card reveal rd2">
+      <div class="why-icon">🏗️</div>
+      <div class="why-title">Scalable Architecture</div>
+      <div class="why-desc">What we build today keeps working as your business grows, instead of needing a rebuild.</div>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-icon">🔧</div>
+      <div class="why-title">Long-Term Support</div>
+      <div class="why-desc">We stay involved after launch — fixing, updating, and improving as your needs change.</div>
+    </div>
+    <div class="why-card reveal rd1">
+      <div class="why-icon">🤖</div>
+      <div class="why-title">AI & Automation Expertise</div>
+      <div class="why-desc">We know where AI genuinely saves time in a business, and where it doesn't — and we'll tell you the difference.</div>
+    </div>
+    <div class="why-card reveal rd2">
+      <div class="why-icon">🎯</div>
+      <div class="why-title">Business-First Thinking</div>
+      <div class="why-desc">Every technical decision is judged by one question: does this move your business forward?</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══ PROCESS ═══ -->
+<section id="process">
+  <div class="s-label reveal">How We Work</div>
+  <h2 class="s-title reveal rd1">A Clear, Predictable Process</h2>
+  <p class="s-sub reveal rd2">No surprises. You'll always know what stage your project is at and what happens next.</p>
+
+  <div class="process-list">
+    <div class="proc-step reveal">
+      <div class="proc-num">01</div>
+      <div>
+        <div class="proc-title">Discovery</div>
+        <div class="proc-desc">We learn your business, your goals, and the problem you're trying to solve — before any technical discussion.</div>
+      </div>
+    </div>
+    <div class="proc-step reveal rd1">
+      <div class="proc-num">02</div>
+      <div>
+        <div class="proc-title">Planning</div>
+        <div class="proc-desc">You get a clear scope, timeline, and cost estimate, so there's no ambiguity about what you're getting.</div>
+      </div>
+    </div>
+    <div class="proc-step reveal rd2">
+      <div class="proc-num">03</div>
+      <div>
+        <div class="proc-title">Design</div>
+        <div class="proc-desc">We map the experience around your users before writing code, so the product is intuitive from day one.</div>
+      </div>
+    </div>
+    <div class="proc-step reveal">
+      <div class="proc-num">04</div>
+      <div>
+        <div class="proc-title">Development</div>
+        <div class="proc-desc">We build in stages with regular check-ins, so you see progress instead of waiting for a single reveal.</div>
+      </div>
+    </div>
+    <div class="proc-step reveal rd1">
+      <div class="proc-num">05</div>
+      <div>
+        <div class="proc-title">Testing</div>
+        <div class="proc-desc">We verify performance, security, and usability before anything goes live.</div>
+      </div>
+    </div>
+    <div class="proc-step reveal rd2">
+      <div class="proc-num">06</div>
+      <div>
+        <div class="proc-title">Launch</div>
+        <div class="proc-desc">Your software goes live with a plan in place, not a rushed handoff.</div>
+      </div>
+    </div>
+    <div class="proc-step reveal">
+      <div class="proc-num">07</div>
+      <div>
+        <div class="proc-title">Ongoing Support</div>
+        <div class="proc-desc">We remain available for updates, fixes, and improvements as your business evolves.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══ CASE STUDIES ═══ -->
+<section id="work">
+  <div class="s-label reveal">Our Work</div>
+  <h2 class="s-title reveal rd1">Recent Projects</h2>
+  <p class="s-sub reveal rd2">Case study details are being finalized. Structure below reflects what each write-up will include.</p>
+
+  <div class="work-grid">
+    <div class="work-card reveal">
+      <span class="work-tag">Case Study — Web Application</span>
+      <div class="work-row"><b>Problem</b><span class="work-placeholder">[Add client problem]</span></div>
+      <div class="work-row"><b>Solution</b><span class="work-placeholder">[Add solution summary]</span></div>
+      <div class="work-row"><b>Technologies</b><span class="work-placeholder">[Add tech stack]</span></div>
+      <div class="work-row"><b>Business Outcome</b><span class="work-placeholder">[Add measured result]</span></div>
+      <div class="work-row"><b>Client Testimonial</b><span class="work-placeholder">[Add testimonial with permission]</span></div>
+    </div>
+    <div class="work-card reveal rd1">
+      <span class="work-tag">Case Study — AI / Automation</span>
+      <div class="work-row"><b>Problem</b><span class="work-placeholder">[Add client problem]</span></div>
+      <div class="work-row"><b>Solution</b><span class="work-placeholder">[Add solution summary]</span></div>
+      <div class="work-row"><b>Technologies</b><span class="work-placeholder">[Add tech stack]</span></div>
+      <div class="work-row"><b>Business Outcome</b><span class="work-placeholder">[Add measured result]</span></div>
+      <div class="work-row"><b>Client Testimonial</b><span class="work-placeholder">[Add testimonial with permission]</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══ FINAL CTA ═══ -->
+<section id="final-cta">
+  <div class="s-label reveal">Next Step</div>
+  <h2 class="fc-title reveal rd1">Let's Talk About Your Business</h2>
+  <p class="fc-desc reveal rd2">Book a free, no-obligation consultation. We'll discuss your goals, current challenges, timeline, and what a solution could realistically look like — no pressure, no commitment required.</p>
+
+  <div class="fc-steps reveal">
+    <div class="fc-step"><b>1. We Listen</b>You describe your business and where things are slow, manual, or costly.</div>
+    <div class="fc-step"><b>2. We Assess</b>We identify realistic options and rough scope for solving it.</div>
+    <div class="fc-step"><b>3. You Decide</b>You leave with clarity — whether or not you choose to work with us.</div>
+  </div>
+
+  <a href="mailto:codestackdevsolutions@gmail.com" class="btn-prim reveal" style="display:inline-flex">
+    Book a Free Consultation →
+  </a>
+  <div class="fc-note">No obligation. No sales pressure. Just a conversation about your business.</div>
 </section>
 
 <div class="divider"></div>
@@ -753,8 +1166,8 @@ footer {
 <!-- ═══ CONTACT ═══ -->
 <section id="contact">
   <div class="s-label reveal">Get In Touch</div>
-  <h2 class="s-title reveal rd1">Let's Build What's Next</h2>
-  <p class="c-quote reveal rd2">"Great ambitions require exceptional execution. If your brand is ready to redefine its digital presence — let's build together."</p>
+  <h2 class="s-title reveal rd1">Other Ways to Reach Us</h2>
+  <p class="c-quote reveal rd2">Prefer email or a direct message over booking a call? Reach out through any of the channels below.</p>
 
   <div class="c-cards">
     <a href="mailto:codestackdevsolutions@gmail.com" class="cc reveal">
@@ -775,7 +1188,7 @@ footer {
   </div>
 
   <a href="mailto:suleman.khaan8246@gmail.com" class="btn-prim reveal" style="display:inline-flex">
-    Begin Your Project →
+    Email Us Directly →
   </a>
 </section>
 
