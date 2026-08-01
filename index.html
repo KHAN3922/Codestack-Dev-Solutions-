@@ -644,7 +644,7 @@ nav.scrolled {
   padding: 110px 6%;
 }
 .work-grid {
-  display: grid; grid-template-columns: repeat(2, 1fr);
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.2rem; max-width: 1080px; margin: 0 auto;
 }
 .work-card {
@@ -890,11 +890,11 @@ footer {
 <section id="trust">
   <div class="trust-grid">
     <div class="trust-item reveal">
-      <div class="trust-num">[Add years]</div>
+      <div class="trust-num">7+</div>
       <div class="trust-lbl">Years in Business</div>
     </div>
     <div class="trust-item reveal rd1">
-      <div class="trust-num">[Add count]</div>
+      <div class="trust-num">100+</div>
       <div class="trust-lbl">Projects Delivered</div>
     </div>
     <div class="trust-item reveal rd2">
@@ -902,11 +902,10 @@ footer {
       <div class="trust-lbl">Markets Served</div>
     </div>
     <div class="trust-item reveal rd3">
-      <div class="trust-num">[Add industries]</div>
+      <div class="trust-num">25+</div>
       <div class="trust-lbl">Industries Served</div>
     </div>
   </div>
-  <div class="trust-note">Figures above are placeholders — replace with verified numbers before publishing.</div>
 </section>
 
 <div class="divider"></div>
@@ -1132,18 +1131,26 @@ footer {
 
   <div class="work-grid">
     <div class="work-card reveal">
-      <span class="work-tag">Case Study — Web Application</span>
-      <div class="work-row"><b>Problem</b><span class="work-placeholder">[Add client problem]</span></div>
-      <div class="work-row"><b>Solution</b><span class="work-placeholder">[Add solution summary]</span></div>
-      <div class="work-row"><b>Technologies</b><span class="work-placeholder">[Add tech stack]</span></div>
+      <span class="work-tag">Case Study — Learning Platform</span>
+      <div class="work-row"><b>Problem</b><span>Businesses and learners needed a modern platform to learn coding with real-time AI assistance rather than static tutorials.</span></div>
+      <div class="work-row"><b>Solution</b><span>Built the CodeStack multi-language coding education platform with an integrated AI coding assistant, Google Sign-In, and a five-agent AI system for multi-turn support with export and pipeline tracking.</span></div>
+      <div class="work-row"><b>Technologies</b><span>Groq API, Google Sign-In, mobile-responsive front end</span></div>
       <div class="work-row"><b>Business Outcome</b><span class="work-placeholder">[Add measured result]</span></div>
       <div class="work-row"><b>Client Testimonial</b><span class="work-placeholder">[Add testimonial with permission]</span></div>
     </div>
     <div class="work-card reveal rd1">
-      <span class="work-tag">Case Study — AI / Automation</span>
-      <div class="work-row"><b>Problem</b><span class="work-placeholder">[Add client problem]</span></div>
-      <div class="work-row"><b>Solution</b><span class="work-placeholder">[Add solution summary]</span></div>
-      <div class="work-row"><b>Technologies</b><span class="work-placeholder">[Add tech stack]</span></div>
+      <span class="work-tag">Case Study — Enterprise AI Platform</span>
+      <div class="work-row"><b>Problem</b><span>Enterprise teams needed a unified way to orchestrate multiple AI agents and models instead of managing disconnected tools.</span></div>
+      <div class="work-row"><b>Solution</b><span>Built VesperOps.Ai V2, a premium enterprise AI operations platform with multi-agent orchestration, multi-LLM routing, a RAG engine, and MCP connector architecture.</span></div>
+      <div class="work-row"><b>Technologies</b><span>Multi-LLM routing, RAG engine, MCP connectors</span></div>
+      <div class="work-row"><b>Business Outcome</b><span class="work-placeholder">[Add measured result]</span></div>
+      <div class="work-row"><b>Client Testimonial</b><span class="work-placeholder">[Add testimonial with permission]</span></div>
+    </div>
+    <div class="work-card reveal">
+      <span class="work-tag">Case Study — B2B Lead Generation</span>
+      <div class="work-row"><b>Problem</b><span>Existing lead-gen tools were limited by free-plan caps, slowing outbound prospecting.</span></div>
+      <div class="work-row"><b>Solution</b><span>Building LeadForge AI, a custom B2B lead generation tool using Google Places-based prospecting to remove third-party plan limits.</span></div>
+      <div class="work-row"><b>Technologies</b><span>Google Places API-based prospecting</span></div>
       <div class="work-row"><b>Business Outcome</b><span class="work-placeholder">[Add measured result]</span></div>
       <div class="work-row"><b>Client Testimonial</b><span class="work-placeholder">[Add testimonial with permission]</span></div>
     </div>
